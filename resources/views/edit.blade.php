@@ -18,7 +18,7 @@
 
         <div class="form-group">
             <label for="due_date">Due Date</label><br>
-            <input type="date" name="due_date" id="due_date" class="form-control" value="{{$tasks->due_date}}" required>
+            <input type="date" name="due_date" id="due_date" min="{{ date('Y-m-d') }}" class="form-control" value="{{$tasks->due_date}}" required>
         </div>
 
         <br>
