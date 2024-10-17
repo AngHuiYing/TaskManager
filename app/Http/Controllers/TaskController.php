@@ -29,6 +29,7 @@ class TaskController extends Controller
         ]);
 
         Tasks::create($request->all());
+        
 
         return redirect()->route('index')->with('success', 'Task added successfully');
     }
